@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+	<remote fetch="https://github.com/edgehook/" name="edgehook">
+	</remote>
+	<remote fetch="https://github.com/Fruit-Pi/" name="Fruit-Pi">
+	</remote>
+
+	<project remote="edgehook" name="rk-uboot" path="u-boot"  revision="bc6bd3b2e6b49390791d7f2aa07b51ec75ca2d27" upstream="rk3399_linux_v231_risc">
+	</project>
+	<project remote="edgehook" name="rk-kernel" path="kernel" revision="b1cff82f08c5c3d1bf2296deab43d91429a60fd3" upstream="rk3399_linux_v231_risc">
+	</project>
+	<project remote="edgehook" name="linux_rootfs_adv" path="rootfs_adv" revision="7a268608b9042f35f03d542c0250f8e89ebbed71" upstream="rk3399_linux_v231_risc">
+		<linkfile src="mk-debian.sh" dest="mk-debian.sh">
+		</linkfile>
+	</project>
+	<project remote="edgehook" name="rk-debian" path="debian" revision="f7bac440414cb402e02aadfcdea352aad37bbfc7" upstream="rk3399_linux_v231_risc">
+	</project>
+	<project remote="edgehook" name="rk-external" path="external" revision="93d240660e9e8cae66c0d8ca5c31e93c9aa272c8" upstream="rk3399_linux_v231_risc">
+	</project>
+	<project remote="edgehook" name="rk-device" path="device" revision="9a5192450ddba482df64a05ec737f6335dde9e37" upstream="rk3399_linux_v231_risc">
+		<linkfile src="rockchip/common/mkfirmware.sh" dest="mkfirmware.sh">
+		</linkfile>
+		<linkfile src="rockchip/common/rkflash.sh" dest="rkflash.sh">
+		</linkfile>
+		<linkfile src="rockchip/common/build.sh" dest="build.sh">
+		</linkfile>
+		<linkfile src="rockchip/rk3399/BoardConfig.mk" dest="device/rockchip/.BoardConfig.mk">
+		</linkfile>
+	</project>
+	<project remote="edgehook" name="rk-buildroot" path="buildroot" revision="96e4f1e8d47a2b72b98915ea159b498d4d7d5ef2" upstream="rk3399_linux_v231_risc">
+		<linkfile src="build/envsetup.sh" dest="envsetup.sh">
+		</linkfile>
+		<linkfile src="build/Makefile" dest="Makefile">
+		</linkfile>
+	</project>
+	<project remote="edgehook" name="rk-app" path="app" revision="c466c204ab9cb99ea1585fecb162d751ad2743f8" upstream="rk3399_linux_v231_risc">
+	</project>
+	<project remote="Fruit-Pi" name="gcc-linaro-6.3.1-2017.05-x86_64_aarch64-linux-gnu" path="prebuilts/gcc/linux-x86/aarch64/gcc-linaro-6.3.1-2017.05-x86_64_aarch64-linux-gnu" revision="f96f76d6be89a6e28d4dac1f233f9aca9921f69b" upstream="master">
+	</project>
+	<project remote="edgehook" name="rk-tools" path="tools" revision="f9e43977e3c298f69d4f1976e9a247cdd36de45d" upstream="rk3399_linux_v231_risc">
+	</project>
+	<project remote="edgehook" name="rkbin" path="rkbin" revision="d6bc0e868ea0b6f669c4191138b47ccd22ffd42d" upstream="rk3399_linux_v231_risc">
+	</project>
+</manifest>
