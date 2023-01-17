@@ -7,7 +7,7 @@
 
 	<project remote="edgehook" name="rk-uboot" path="u-boot"  revision="1180707a930c8833b3beccb143bb7f6dc5db6a96" upstream="next-dev">
 	</project>
-	<project remote="edgehook" name="rk-kernel" path="kernel" revision="3a4663e859860e08c25ed2bd9da6f19e9d858308" upstream="develop-5.10">
+	<project remote="edgehook" name="rk-kernel" path="kernel" revision="2d1290fdea4a003d7e85fa58418b8e00e6285d9b" upstream="develop-5.10">
 	</project>
 	<project remote="edgehook" name="rk-ubuntu" path="ubuntu" revision="b816353ba16495d5baa2c0bf2df8a7baf6779959" upstream="ubuntu20.04">
 		<linkfile src="mk-ubuntu.sh" dest="mk-ubuntu.sh">
