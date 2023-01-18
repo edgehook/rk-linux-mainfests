@@ -19,6 +19,6 @@ $: repo sync
 ```
 Examples:To download the RK3399 itb201 release.
 ```
-$repo init -u https://github.com/edgehook/rk-linux-manifests.git  -b master -m adv-rk3399-itb201a1-1.0.0.xml
+$repo init -u https://github.com/edgehook/rk-linux-manifests.git  -b rk3399_linux_v231_risc -m adv-rk3399-itb201a1-1.0.0.xml
 $repo sync
 ```
